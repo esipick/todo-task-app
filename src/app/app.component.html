@@ -1,0 +1,36 @@
+<h1>
+  {{title}}
+</h1>
+<form [formGroup]="addTaskForm" (ngSubmit)="submitAddTaskForm()" style="margin-left: 300px;width: 400px">
+<mat-form-field>
+  <input autocomplete="false" matInput placeholder="Add new task" formControlName="newTask">
+</mat-form-field>
+<button name="submit" mat-icon-button color="primary">
+  <mat-icon aria-label="">check</mat-icon>
+</button>
+</form>
+<div style="margin-left: 300px;width: 400px">
+  <button
+    mat-raised-button
+    class="mat-primary fill text-sm"
+    (click)="list.selectAll()">
+    Select All
+  </button>
+  <button
+    mat-raised-button
+    class="mat-accent fill text-sm"
+    (click)="list.deselectAll()">
+    Deselect All
+  </button>
+  <button
+    mat-icon-button
+    (click)="removeSelectedRows()">
+    <mat-icon aria-label="">delete</mat-icon>
+  </button>
+  <p *ngIf="tasks.length == 0">No tasks added</p>
+  <mat-selection-list style="width:100%" #list [(ngModel)]="selectedOptions">
+    <mat-list-option *ngFor="let tta of tasks" [value]="tta.id">
+      {{tta.name}}
+    </mat-list-option>
+  </mat-selection-list>
+</div>
