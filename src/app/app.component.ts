@@ -53,5 +53,7 @@ export class AppComponent {
         this.tasks.splice(index, 1);
       }
     });
+    //set updated task in localstorage
+    localStorage.setItem('tasks',JSON.stringify(this.tasks))
   }
 }
