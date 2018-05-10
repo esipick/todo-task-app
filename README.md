@@ -16,9 +16,9 @@
 
 
 ## Related Files
-- [src/app/app.component.html](https://bitbucket.org/team-esipick/calculator/src/85cbf0feda2b6b2e826811241b544be632657de9/app/Http/Middleware/ValidateOperands.php?at=master) 
+- [src/app/app.component.html](https://github.com/esipick/todo-task-app/blob/master/src/app/app.component.html) 
 
-- [src/app/app.component.ts](https://bitbucket.org/team-esipick/calculator/src/85cbf0feda2b6b2e826811241b544be632657de9/app/Http/Middleware/ValidateOperands.php?at=master) 
+- [src/app/app.component.ts](https://github.com/esipick/todo-task-app/blob/master/src/app/app.component.ts) 
  
 ## Demo Link
 - [todoapp.esipick.com](http://todoapp.esipick.com) 
